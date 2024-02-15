@@ -6,6 +6,8 @@
   "scripts": {
     "build": "tsc -p .",
     "test": "jest --coverageDirectory test-coverage --coverage --watchAll=false",
+    "test-first": "jest --collect-coverage",
+    "test-coverage-firstj": "rm -rf test-coverage && jest --coverageDirectory test-coverage --collect-coverage --watchAll=false --testResultsProcessor jest-sonar"
     "test2": "jest --coverageDirectory test-coverage --coverage --watchAll=false",
     "test1": "jest --coverage",
     "test-coverage": "jest --coverage --watchAll",
@@ -20,6 +22,7 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^21.2.1",
+    "jest-sonar": "^0.2.16",
     "jest-sonar-reporter": "^2.0.0",
     "sonarqube-scanner": "^2.0.2",
     "ts-jest": "^21.1.3",
