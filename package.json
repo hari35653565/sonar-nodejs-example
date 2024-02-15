@@ -5,11 +5,18 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc -p .",
-    "test": "jest --coverage",
+    "test": "jest --coverageDirectory test-coverage --coverage --watchAll=false",
+    "test2": "jest --coverageDirectory test-coverage --coverage --watchAll=false",
+    "test1": "jest --coverage",
     "test-coverage": "jest --coverage --watchAll",
-    "test-coverage-first": "jest --coverage --watchAll --testResultsProcessor jest-sonar-reporter"
+    "test-coverage-first": "rm -rf test-coverage && jest --coverageDirectory test-coverage --coverage --watchAll=false --testResultsProcessor jest-sonar-reporter"
   },
-  "author": "",
+  "jestSonar": {
+    "reportPath": "test-coverage",
+    "reportFile": "test-jest.xml",
+    "indent": 4
+  },
+  "author": "hari",
   "license": "ISC",
   "devDependencies": {
     "jest": "^21.2.1",
