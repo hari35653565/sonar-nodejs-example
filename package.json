@@ -7,7 +7,7 @@
     "build": "tsc -p .",
     "test": "jest --coverage",
     "test-coverage": "jest --coverage --watchAll",
-    "test-coverage-first": "jest --coverage --watchAll --testResultsProcessor jest-sonar-reporter",
+    "test-coverage-first": "jest --coverage --watchAll --testResultsProcessor jest-sonar-reporter"
   },
   "author": "",
   "license": "ISC",
