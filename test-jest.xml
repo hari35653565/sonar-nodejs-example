@@ -1,0 +1,5 @@
+<testExecutions version="1">
+  <file path="/var/lib/jenkins/workspace/test-jest/tests/index.test.ts">
+    <testCase name="should return '1' for 1" duration="1" />
+  </file>
+</testExecutions>
